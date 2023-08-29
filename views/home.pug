@@ -10,7 +10,10 @@ block style
 block content
     section#introSection 
             div Welcome to Abdullah's Dance Academy
-            div.small Eat Dance Sleep Repeat
+            //- div.small Eat Dance Sleep Repeat-//
+            div.video-container
+                video.repeat-video(autoplay loop muted)
+                    source(src="../static/EatDanceSleepRepeat.mp4" type="video/mp4" playBackRate="2")
 
     section#missionSection 
             h2 Our Mission
